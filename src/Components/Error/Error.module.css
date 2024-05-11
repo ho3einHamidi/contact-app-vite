@@ -1,0 +1,17 @@
+.container {
+  margin-top: 16px;
+  color: #b00020;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    width: 844px;
+    height: 32px;
+    background-color: #ffcdd2;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding-left: 8px;
+  }
+}
