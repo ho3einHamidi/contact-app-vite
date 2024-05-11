@@ -1,0 +1,10 @@
+.container {
+  .header {
+    height: 200px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065fc;
+  }
+}

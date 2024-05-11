@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .formWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 32px 64px;
+    box-shadow: 2px 2px 40px 2px rgba(107, 186, 255, 0.67);
+    -webkit-box-shadow: 2px 2px 40px 2px rgba(107, 186, 255, 0.67);
+    -moz-box-shadow: 2px 2px 40px 2px rgba(107, 186, 255, 0.67);
+    border-radius: 16px;
+    .button {
+      width: 716px;
+      height: 32px;
+      border-radius: 8px;
+      border: 1px solid #9fa0a1;
+      background-color: #0065fc;
+      color: white;
+    }
+    .inputWrapper {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      gap: 16px;
+    }
+  }
+}
