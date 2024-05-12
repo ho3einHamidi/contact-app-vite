@@ -1,0 +1,19 @@
+.container {
+  max-width: 844px;
+  margin: 32px auto;
+  .contacts {
+    max-width: 844px;
+    margin: 32px auto;
+    border-radius: 16px;
+    border: 1px solid #60b4fe;
+    padding: 16px 16px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .alert {
+    text-align: center;
+    font-size: 24px;
+    margin: 32px 0;
+  }
+}

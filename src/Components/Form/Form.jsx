@@ -4,9 +4,11 @@ import { useState } from "react";
 import Error from "../Error/Error";
 import { inputs } from "../inputs";
 import ContactsList from "../ContactsList/ContactsList";
+import { v4 } from "uuid";
 function Form() {
   const [contacts, setContacts] = useState([]);
   const [contact, setContact] = useState({
+    id: "",
     name: "",
     lastName: "",
     email: "",
@@ -29,15 +31,15 @@ function Form() {
       setAlert("Please Enter Valid Data!");
     } else {
       setAlert(null);
+      const newContact = { ...contact, id: v4() };
+      setContacts((contacts) => [...contacts, newContact]);
     }
-    setContacts((contacts) => [...contacts, contact]);
     setContact({
       name: "",
       lastName: "",
       email: "",
       phone: "",
     });
-    console.log(contact, "=================");
   };
   return (
     <>
