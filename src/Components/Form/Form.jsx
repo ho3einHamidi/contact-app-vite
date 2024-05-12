@@ -41,6 +41,12 @@ function Form() {
       phone: "",
     });
   };
+  const deleteHandler = (id) => {
+    const newContacts = contacts.filter((contacts) => {
+      return contacts.id !== id;
+    });
+    setContacts(newContacts);
+  };
   return (
     <>
       <div className={styles.container}>
@@ -66,7 +72,7 @@ function Form() {
       </div>
       <div>{alert && <Error alert={alert} />}</div>
       <div>
-        <ContactsList contacts={contacts} />
+        <ContactsList deleteHandler={deleteHandler} contacts={contacts} />
       </div>
     </>
   );
