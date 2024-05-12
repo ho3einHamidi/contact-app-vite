@@ -9,3 +9,14 @@
 .input::placeholder {
   color: #312e2e;
 }
+/* this code for remove arrow keys from inputs has number type*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  /*this code for chrom*/
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  /*this code for firefox*/
+}
